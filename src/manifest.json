@@ -1,0 +1,46 @@
+{
+  "manifest_version": 1,
+  "version": 1,
+  "type": "APP",
+  "desktop": {
+    "js": [
+      "https://js.cybozu.com/jquery/3.3.1/jquery.min.js",
+      "https://sdk.amazonaws.com/js/aws-sdk-2.661.0.min.js",
+      "js/kintone-ui-component.min.js",
+      "js/desktop.js"
+    ],
+    "css": [
+      "css/51-modern-default.css",
+      "css/kintone-ui-component.min.css",
+      "css/desktop.css"
+    ]
+  },
+  "icon": "image/icon.png",
+  "config": {
+    "html": "html/config.html",
+    "js": [
+      "https://js.cybozu.com/jquery/3.3.1/jquery.min.js",
+      "js/config.js"
+    ],
+    "css": [
+      "css/51-modern-default.css",
+      "css/config.css"
+    ],
+    "required_params": [
+      "region",
+      "identityPoolId",
+      "bucket",
+      "spaceId",
+      "filenameId",
+      "acl"
+    ]
+  },
+  "name": {
+    "en": "s3uploader",
+    "ja": "s3uploader"
+  },
+  "description": {
+    "en": "Amazon S3 Uploader",
+    "ja": "Amazon S3に画像ファイルをアップロードするプラグインです。アップロードのみです。削除や更新はできません。"
+  }
+}

@@ -1,0 +1,62 @@
+<div>
+  <div class="kintoneplugin-row">
+    <div class="kintoneplugin-label">AWS</div>
+  </div>
+  <div class="kintoneplugin-row">
+    <div class="kintoneplugin-title">Region<span class="kintoneplugin-require">*</span></div>
+    <div class="kintoneplugin-desc"></div>
+    <div class="kintoneplugin-input-outer">
+      <input class="kintoneplugin-input-text" type="text" id="region" placeholder="ap-northeast-1">
+    </div>
+  </div>
+  <div class="kintoneplugin-row">
+    <div class="kintoneplugin-title">Identity Pool ID<span class="kintoneplugin-require">*</span></div>
+    <div class="kintoneplugin-desc"></div>
+    <div class="kintoneplugin-input-outer">
+      <input class="kintoneplugin-input-text" type="text" id="identity_pool_id" placeholder="ap-northeast-1:abcd1234-1234-ab12-ab12-abcdef123456">
+    </div>
+  </div>
+  <div class="kintoneplugin-row">
+    <div class="kintoneplugin-title">Bucket<span class="kintoneplugin-require">*</span></div>
+    <div class="kintoneplugin-desc"></div>
+    <div class="kintoneplugin-input-outer">
+      <input class="kintoneplugin-input-text" type="text" id="bucket" placeholder="abcdef123456">
+    </div>
+  </div>
+  <div class="kintoneplugin-row">
+    <div class="kintoneplugin-title">Key Name Prefix</div>
+    <div class="kintoneplugin-desc">保存先のフォルダ階層を指定します。最後は区切り記号 ("/")で終わってください。</div>
+    <div class="kintoneplugin-input-outer">
+      <input class="kintoneplugin-input-text" type="text" id="key_prefix" placeholder="path/to/holder/">
+    </div>
+  </div>
+  <div class="kintoneplugin-row">
+    <div class="kintoneplugin-title">ACL<span class="kintoneplugin-require">*</span></div>
+    <div class="kintoneplugin-desc">既定ACLを指定します。(public-read, authenticated-read等)</div>
+    <div class="kintoneplugin-input-outer">
+      <input class="kintoneplugin-input-text" type="text" id="acl" placeholder="authenticated-read">
+    </div>
+  </div>
+  
+  <div class="kintoneplugin-row">
+    <div class="kintoneplugin-label">フォーム</div>
+  </div>
+  <div class="kintoneplugin-row">
+    <div class="kintoneplugin-title">Space ID<span class="kintoneplugin-require">*</span></div>
+    <div class="kintoneplugin-desc">スペースフォームの要素IDを指定します。ファイルの選択フォームに置き換わります。</div>
+    <div class="kintoneplugin-input-outer">
+      <input class="kintoneplugin-input-text" type="text" id="space_id" placeholder="Space ID">
+    </div>
+  </div>
+  <div class="kintoneplugin-row">
+    <div class="kintoneplugin-title">Text ID<span class="kintoneplugin-require">*</span></div>
+    <div class="kintoneplugin-desc">文字列(1行または複数行)フォームのフィールドコードを指定します。アップロードしたオブジェクトのキーが保存されます。</div>
+    <div class="kintoneplugin-input-outer">
+      <input class="kintoneplugin-input-text" type="text" id="filename_id" placeholder="Text ID">
+    </div>
+  </div>
+  <div class="kintoneplugin-row">
+    <button type="button" class="kintoneplugin-button-dialog-ok">Save</button>
+    <button type="button" class="kintoneplugin-button-dialog-cancel">Cancel</button>
+  </div>
+</section>
